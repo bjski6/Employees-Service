@@ -53,10 +53,10 @@ After running docker-compose and pulling postgreSQL docker image, database "empl
 <br><br>
 ### Test Appplication
 Application can be tested e.g using Swagger Ui.
-- before testing, execute sql query to feed data base with example data:
-INSERT into public.employee (employee_id, name, surname, role, hiring_date) values ('1', 'John', 'Doe', 'DEVELOPER', '2026-01-01');
-INSERT into public.employee (employee_id, name, surname, role, hiring_date) values ('2', 'Mark', 'Kraft', 'MANAGER', '2025-10-01');
-INSERT into public.employee (employee_id, name, surname, role, hiring_date) values ('3', 'Linda', 'McKay', 'TESTER', '2023-02-11');
+- before testing, execute sql query to feed data base with example data:<br>
+INSERT into public.employee (employee_id, name, surname, role, hiring_date) values ('1', 'John', 'Doe', 'DEVELOPER', '2026-01-01');<br>
+INSERT into public.employee (employee_id, name, surname, role, hiring_date) values ('2', 'Mark', 'Kraft', 'MANAGER', '2025-10-01');<br>
+INSERT into public.employee (employee_id, name, surname, role, hiring_date) values ('3', 'Linda', 'McKay', 'TESTER', '2023-02-11');<br>
 - running Swagger UI:
   When application is running Swagger UI can be open via http://localhost:8080/swagger-ui/index.html
   <br><br>
