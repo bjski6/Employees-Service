@@ -12,7 +12,7 @@ public interface EmployeeMapper {
 
     EmployeeMapper INSTANCE = Mappers.getMapper(EmployeeMapper.class);
 
-    Employee mapToModern(EmployeeDto employeeDto);
+    Employee mapToModel(EmployeeDto employeeDto);
 
     @InheritInverseConfiguration(name = "mapToModel")
     EmployeeDto mapToDto(Employee employee);

@@ -3,11 +3,8 @@ package com.microservices.employeesservice.integration.rest.host.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.microservices.employeesservice.model.Role;
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
 
 import java.time.LocalDate;
 
