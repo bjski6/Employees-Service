@@ -4,18 +4,15 @@ import com.microservices.employeesservice.integration.rest.host.common.ProduceSa
 import com.microservices.employeesservice.integration.rest.host.dto.EmployeeDto;
 import com.microservices.employeesservice.model.Employee;
 import com.microservices.employeesservice.repository.EmployeeRepository;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.core.AutoConfigureCache;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 
 @SpringBootTest

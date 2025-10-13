@@ -20,8 +20,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @WebMvcTest(controllers = EmployeeController.class)
 class EmployeeControllerTest {
 
