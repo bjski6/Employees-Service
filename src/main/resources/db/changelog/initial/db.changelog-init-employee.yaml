@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      author: bartosz_jankowski
+      id: 1
+      changes:
+        - createTable:
+            tableName: employee
+            columns:
+              - column:
+                  autoIncrement: true
+                  name: id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_employee
+              - column:
+                  name: employee_id
+                  type: VARCHAR(255)
+                  constraints:
+                    unique: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: surname
+                  type: VARCHAR(255)
+              - column:
+                  name: role
+                  type: VARCHAR(255)
+              - column:
+                  name: hiring_date
+                  type: DATE

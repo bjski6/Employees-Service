@@ -1,0 +1,18 @@
+version: "3.8"
+
+volumes:
+  es-postgres-db:
+
+services:
+  es-postgres:
+    image: postgres
+    container_name: es-postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=employeesservice
+    ports:
+      - '5432:5432'
+    volumes:
+      - es-postgres-db:/var/lib/postgresql/data
